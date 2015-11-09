@@ -1,0 +1,52 @@
+@import "syntax-variables";
+
+atom-text-editor {
+  color      : @light-grey;
+  background : @dark-blue;
+}
+
+.selection .region {
+  background-color : darken(@syntax-selection-color, 2%);
+}
+
+.region.bracket-matcher {
+  border-bottom : 1px dotted @blue;
+}
+
+.punctuation.tag.html {
+  color : @dark-grey;
+}
+
+.comment {
+  color : desaturate(lighten(@dark-blue, 30%), 10%);
+}
+
+.cursor-line {
+  background : @syntax-selection-color;
+}
+
+.meta.brace.square {
+  color : @dark-grey;
+}
+
+.meta.function .support.class {
+  color : @cyan;
+}
+
+.support.class.js {
+  color : @blue;
+}
+
+.support.constant.js {
+  color : @blue;
+}
+
+.support.function.php,
+.support.function.js {
+  color : @cyan;
+}
+
+.cursors {
+  z-index  : 1000;
+  position : relative;
+}

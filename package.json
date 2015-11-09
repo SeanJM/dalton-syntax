@@ -1,0 +1,15 @@
+{
+  "name": "dalton-syntax",
+  "theme": "syntax",
+  "version": "0.5.0",
+  "description": "A One Dark inspired theme.",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/SeanJM/dalton-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
