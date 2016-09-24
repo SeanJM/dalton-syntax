@@ -5,7 +5,10 @@
   "description": "A One Dark inspired theme.",
   "keywords": [
     "syntax",
-    "theme"
+    "theme",
+    "dark",
+    "blue",
+    "contrast"
   ],
   "repository": "https://github.com/SeanJM/dalton-syntax",
   "license": "MIT",
