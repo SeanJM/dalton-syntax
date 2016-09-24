@@ -1,20 +1,22 @@
 @import "syntax-variables";
 
-.string.quoted.template .storage.type.function,
-.storage.type.function {
-  color: @cyan;
-}
-
-.string.quoted.template .storage.type.arrow,
-.storage.type.arrow {
+.storage.type.class,
+.storage.type.function,
+.storage.type.js,
+.string.quoted.template .storage.type.function {
   color : @cyan;
 }
 
-.string.quoted.template .storage.modifier,
-.storage.modifier {
-  color: @cyan;
+.storage.type.arrow,
+.string.quoted.template .storage.type.arrow {
+  color : @cyan;
+}
+
+.storage.modifier,
+.string.quoted.template .storage.modifier {
+  color : @cyan;
 }
 
 .jsdoc.storage {
-  color: mix(@cyan, @syntax-comment-color, 35%);
+  color : mix(@cyan, @syntax-comment-color, 35%);
 }

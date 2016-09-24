@@ -17,7 +17,8 @@ atom-text-editor {
   color : @dark-grey;
 }
 
-.comment {
+.comment,
+.source.yaml {
   color : @syntax-comment-color;
 }
 
@@ -40,4 +41,8 @@ atom-text-editor {
 
 .indent-guide {
   color : mix(@dark, @dark-blue, 30%);
+}
+
+.import .module {
+  color : @cyan;
 }

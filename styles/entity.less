@@ -1,25 +1,30 @@
 @import "syntax-variables";
 
 .entity {
-  color: @mauve;
+  color : @mauve;
 }
 
-.entity.name.function {
-  color: @mauve;
+.entity.name.tag.yaml {
+  color : @blue;
+}
+
+.meta.method-call .storage + .entity.name.function,
+.storage + .entity.name.function {
+  color : @green;
 }
 
 .meta.function-call,
 .meta.method-call {
   .entity.name.function {
-    color: @light-grey;
+    color : @light-grey;
   }
 }
 
 .entity.tag,
 .entity.tag.scss {
-  color: @cyan;
+  color : @cyan;
 }
 
 .entity.pseudo-class {
-  color: @grey;
+  color : @grey;
 }

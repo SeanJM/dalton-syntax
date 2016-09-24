@@ -1,5 +1,9 @@
 @import "syntax-variables";
 
+.punctuation.definition.string {
+  color : @orange;
+}
+
 .string.quoted {
   color : @orange;
 
@@ -24,4 +28,10 @@
 .attribute-selector .punctuation.string.less,
 .attribute-selector .punctuation.string.scss {
   color : @orange;
+}
+
+.constant {
+  .string.unquoted.js-label {
+    color : @light-grey;
+  }
 }

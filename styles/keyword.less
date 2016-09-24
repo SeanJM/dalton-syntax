@@ -1,19 +1,29 @@
-.string.quoted.template .keyword.control,
-.keyword.control {
-  color: @cyan;
+.keyword.control,
+.string.quoted.template .keyword.control {
+  color : @cyan;
 }
 
-.string.quoted.template .keyword.unit,
-.keyword.unit {
-  color: @purple;
-}
-
-.string.quoted.template .keyword.operator,
-.keyword.operator {
-  color: @purple;
-}
-
-.string.quoted.template .keyword.operator.logical,
-.keyword.operator.logical {
+.keyword.unit,
+.string.quoted.template .keyword.unit {
   color : @purple;
+}
+
+.constant .punctuation,
+.keyword.operator,
+.string.quoted.template .keyword.operator {
+  color : @purple;
+}
+
+.keyword.operator.logical,
+.string.quoted.template .keyword.operator.logical {
+  color : @purple;
+}
+
+.keyword.operator.decoration,
+.keyword.operator.decoration + .variable.other.readwrite {
+  color : @green;
+}
+
+.keyword.operator.accessor {
+  color : @light-grey;
 }
