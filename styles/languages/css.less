@@ -23,9 +23,29 @@
 
 .variable.less,
 .variable.scss {
-  color : @syntax-variable-color;
+  color : @variable-color;
 }
 
 .css .keyword.control.operator {
   color : @grey;
+}
+
+.entity.tag.scss {
+  color : @grey;
+}
+
+.entity.reference.scss {
+  color : @green;
+}
+
+.meta.set.variable.scss {
+  color : @grey;
+}
+
+.attribute-selector {
+  .punctuation.string.css,
+  .punctuation.string.less,
+  .punctuation.string.scss {
+    color : @orange;
+  }
 }

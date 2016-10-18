@@ -1,21 +1,17 @@
+@import "syntax-variables";
+
 .keyword.control,
 .string.quoted.template .keyword.control {
   color : @cyan;
 }
 
-.keyword.unit,
-.string.quoted.template .keyword.unit {
-  color : @purple;
-}
-
 .constant .punctuation,
-.keyword.operator,
-.string.quoted.template .keyword.operator {
-  color : @purple;
-}
-
 .keyword.operator.logical,
-.string.quoted.template .keyword.operator.logical {
+.keyword.operator,
+.keyword.unit,
+.string.quoted.template .keyword.operator.logical,
+.string.quoted.template .keyword.operator,
+.string.quoted.template .keyword.unit {
   color : @purple;
 }
 

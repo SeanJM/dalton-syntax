@@ -1,25 +1,26 @@
 @import "syntax-variables";
 
-atom-text-editor {
+.editor,
+.editor-colors {
   color      : @light-grey;
   background : @dark-blue;
-}
-
-.selection .region {
-  background-color : darken(@syntax-selection-color, 2%);
 }
 
 .region.bracket-matcher {
   border-bottom : 1px dotted @blue;
 }
 
-.punctuation.tag.html {
-  color : @dark-grey;
-}
-
 .comment,
 .source.yaml {
-  color : @syntax-comment-color;
+  color : @comment-color;
+}
+
+.highlight.selection .region {
+  background : lighten(@dark-blue, 5%);
+}
+
+.cursor {
+  color : @light-grey;
 }
 
 .cursor-line {
@@ -28,10 +29,6 @@ atom-text-editor {
 
 .meta.brace.square {
   color : @dark-grey;
-}
-
-.meta.function .support.class {
-  color : @cyan;
 }
 
 .cursors {
