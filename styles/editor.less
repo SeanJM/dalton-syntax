@@ -2,10 +2,11 @@
 
 .atom-text-editor,
 .atom-text-editor .gutter,
+.pane-item,
+.results-view,
 :host,
-:host .gutter,
-atom-pane-container atom-pane .item-views .pane-item {
-  color            : @light;
+:host .gutter {
+  color            : @light-grey;
   background-color : @dark-blue;
 }
 
@@ -42,16 +43,12 @@ atom-text-editor .current-result .region {
 
 .atom-text-editor .invisible-character,
 :host .invisible-character {
-  color : @grey;
+  color : @light-grey;
 }
 
 .atom-text-editor .indent-guide,
 :host .indent-guide {
   color : mix(@dark, @dark-blue, 30%);
-}
-
-.cursor {
-  color : @light-grey;
 }
 
 .cursors {
