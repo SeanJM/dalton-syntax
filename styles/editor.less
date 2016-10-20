@@ -3,7 +3,8 @@
 .atom-text-editor,
 .atom-text-editor .gutter,
 :host,
-:host .gutter {
+:host .gutter,
+atom-pane-container atom-pane .item-views .pane-item {
   color            : @light;
   background-color : @dark-blue;
 }
@@ -14,8 +15,11 @@
 }
 
 .atom-text-editor.is-focused .selection .region,
+.cursor-line,
+.list-group .selected::before,
+.list-tree .selected::before,
 :host(.is-focused) .selection .region {
-  background-color : lighten(@dark-blue, 5%);
+  background-color : lighten(@dark-blue, 7%);
 }
 
 atom-text-editor::shadow .find-result .region,
@@ -48,10 +52,6 @@ atom-text-editor .current-result .region {
 
 .cursor {
   color : @light-grey;
-}
-
-.cursor-line {
-  background : lighten(@dark-blue, 5%);
 }
 
 .cursors {
