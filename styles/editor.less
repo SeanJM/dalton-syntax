@@ -1,0 +1,70 @@
+@import "syntax-variables";
+
+.atom-text-editor,
+.atom-text-editor .gutter,
+:host,
+:host .gutter {
+  color            : @light;
+  background-color : @dark-blue;
+}
+
+.atom-text-editor.is-focused .cursor,
+:host(.is-focused) .cursor {
+  border-color : @blue;
+}
+
+.atom-text-editor.is-focused .selection .region,
+:host(.is-focused) .selection .region {
+  background-color : lighten(@dark-blue, 5%);
+}
+
+atom-text-editor::shadow .find-result .region,
+atom-text-editor .find-result .region {
+  border-color : lighten(@dark-blue, 30%);
+}
+
+atom-text-editor::shadow .current-result .region,
+atom-text-editor .current-result .region {
+  border-color : lighten(@dark-blue, 10%);
+}
+
+.atom-text-editor.is-focused .line-number.cursor-line-no-selection,
+.atom-text-editor.is-focused .line.cursor-line,
+.tool-panel,
+:host(.is-focused) .line-number.cursor-line-no-selection,
+:host(.is-focused) .line.cursor-line {
+  background-color : @dark-blue;
+}
+
+.atom-text-editor .invisible-character,
+:host .invisible-character {
+  color : @grey;
+}
+
+.atom-text-editor .indent-guide,
+:host .indent-guide {
+  color : mix(@dark, @dark-blue, 30%);
+}
+
+.cursor {
+  color : @light-grey;
+}
+
+.cursor-line {
+  background : lighten(@dark-blue, 5%);
+}
+
+.cursors {
+  z-index  : 1000;
+  position : relative;
+}
+
+.atom-text-editor .gutter .line-number.git-line-added,
+.atom-text-editor .gutter .line-number.git-line-modified,
+.atom-text-editor .gutter .line-number.git-line-removed,
+:host .gutter .line-number.git-line-added,
+:host .gutter .line-number.git-line-modified,
+:host .gutter .line-number.git-line-removed {
+  padding-left      : calc(0.5em - 5px);
+  border-left-width : 5px;
+}

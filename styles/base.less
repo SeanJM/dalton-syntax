@@ -1,45 +1,20 @@
-@import "syntax-variables";
-
-.editor,
-.editor-colors {
-  color      : @light-grey;
-  background : @dark-blue;
-}
-
 .region.bracket-matcher {
   border-bottom : 1px dotted @blue;
 }
 
 .comment,
 .source.yaml {
-  color : @comment-color;
-}
-
-.highlight.selection .region {
-  background : lighten(@dark-blue, 5%);
-}
-
-.cursor {
-  color : @light-grey;
-}
-
-.cursor-line {
-  background : @syntax-selection-color;
+  color : @comment-color
 }
 
 .meta.brace.square {
   color : @dark-grey;
 }
 
-.cursors {
-  z-index  : 1000;
-  position : relative;
-}
-
-.indent-guide {
-  color : mix(@dark, @dark-blue, 30%);
-}
-
 .import .module {
+  color : @cyan;
+}
+
+.meta.function .support.class {
   color : @cyan;
 }
