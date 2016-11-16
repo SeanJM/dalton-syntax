@@ -2,16 +2,26 @@
   color : @mauve;
 }
 
+.entity.name.type {
+  color : @green;
+}
+
+.entity.name.class {
+  color : @green;
+}
+
 .entity.name.tag.yaml {
   color : @blue;
 }
 
 .meta.method-call .storage + .entity.name.function,
+.storage.type + .meta.function .entity.name.function,
 .storage + .entity.name.function {
   color : @green;
 }
 
 .meta.function-call,
+.meta.function.json .meta.method-call,
 .meta.method-call {
   .entity.name.function {
     color : @light-grey;
